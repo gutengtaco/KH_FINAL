@@ -39,7 +39,7 @@ public class SeonghoonController {
 	
 	@RequestMapping(value="main.csh")
 	public String mainController(Model model) {
-		return "seonghoon/메인";
+		return "seonghoon/mainController";
 	}
 	/*********** 오늘의 재고 페이지 ***********/
 	@RequestMapping(value="todayStock.csh")
@@ -100,7 +100,7 @@ public class SeonghoonController {
 		model.addAttribute("d_list4",d_list4);
 		model.addAttribute("d_list5",d_list5);
 		*/
-			return "seonghoon/오늘의재고";
+			return "seonghoon/todayStockList";
 		}
 }
 	
@@ -158,7 +158,7 @@ public class SeonghoonController {
 		model.addAttribute("sort_list", sort_list);
 		
 		
-		return "seonghoon/재료별재고현황";
+		return "seonghoon/selectSortIngredient";
 		
 	}
 	
@@ -210,7 +210,7 @@ public class SeonghoonController {
 		model.addAttribute("sales_list1", sales_list1);
 		model.addAttribute("menu_list",menu_list);
 
-		return "seonghoon/제품판매현황";
+		return "seonghoon/menuSalesList";
 	}
 	
 	
@@ -550,7 +550,7 @@ public class SeonghoonController {
 // 1. 단순 포워딩	
 @RequestMapping(value="ingredientDisposal.csh")
 public String disposalView(Model model) {
-	return "seonghoon/폐기관리";
+	return "seonghoon/disposalView";
 }
 
 // 2. 폐기 관리를 해야할 리스트 
@@ -594,7 +594,7 @@ public String selectDisposal(
 	model.addAttribute("pi", pi);
 	model.addAttribute("disposal_list", disposal_list);
 	
-	return "seonghoon/폐기관리";
+	return "seonghoon/disposalView";
 }
 
 // 3. 폐기를 진행함

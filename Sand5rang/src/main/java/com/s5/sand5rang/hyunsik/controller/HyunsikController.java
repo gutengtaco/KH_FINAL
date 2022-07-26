@@ -257,7 +257,7 @@ if(flowDate!=0) {
 		model.addAttribute("confirm", 1);
 }
 		
-	return "seonghoon/전체재고현황";
+	return "seonghoon/ingredientAllStockList";
 	}
 
 	
@@ -397,7 +397,7 @@ if(flowDate!=0) {
 			
 		}
 		
-		return "seonghoon/판매기입페이지"; 
+		return "seonghoon/salesPage0"; 
 	}
 	
 	@RequestMapping(value="joinStoreForm.hs")
